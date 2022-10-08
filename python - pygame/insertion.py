@@ -1,9 +1,11 @@
-# selection sort made by Markimark, aka GiorDior, aka Giorgio
+# insertion sort made by Markimark, aka GiorDior, aka Giorgio
 import pygame
 from data.scripts.ArrayAndVisualisationSystem import Root, Render, Array, event
 
-# using the selection sort to sort an array
-# Selection sort works by taking the smallest element in an unsorted array and bringing it to the front.
+# using the insertion sort to sort an array
+#It runs through an array step by step and takes an element from the unsorted input sequence 
+# and then inserts it again at the correspondingly correct position - "sorting by insertion". 
+# The remaining elements of the array must then be moved behind the newly inserted value.
 def sort(root: Root, array: list[int]):
     for i in range(1,len(array)):
 
