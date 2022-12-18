@@ -4,4 +4,6 @@ There are many different sorting algorithms. Here is my implementation and visua
 ## Requirements
 For python you need:
 <li>python</li>
-<li>pygame</li>
+<li>pygame</li><br>
+
+![alt text](https://raw.githubusercontent.com/GiorDior/Visualisation-of-Sorting-Algorithms/main/screenshot.png)
