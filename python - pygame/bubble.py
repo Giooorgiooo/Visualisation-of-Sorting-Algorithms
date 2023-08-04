@@ -8,13 +8,12 @@ from data.scripts.ArrayAndVisualisationSystem import Root, Render, Array, event
 # they are swapped. At the end of the phase, the largest or smallest element of the input is at the end of the list in 
 # ascending or descending order.
 def sort(root: Root, array: list[int]):
-    while not Array.isSorted(array):
-        for i in range(len(array)):
-            if i != len(array) - 1:
-                # checking if current element is higher than nex
-                if array[i + 1] < array[i]:
-                    Array.swapElements(array, i + 1, i)
-                    Render.array(root, array, "white", [[i, "red"], [i + 1, "red"]])       
+    n = len(array)
+    for i in range(n):
+        for j in range(n - i - 1):
+            if array[j] > array[j + 1]:
+                Array.swapElements(array, j, j + 1) 
+                Render.array(root, array, "white", [[j, "red"], [j + 1, "red"]])   
     return array
 
 if __name__ == "__main__":
