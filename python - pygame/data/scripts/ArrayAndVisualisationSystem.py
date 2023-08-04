@@ -47,10 +47,7 @@ class Array:
 
     # swaping to elements of a given array
     def swapElements(array: list, first_index: int, second_index: int) -> list:
-        first_element = array[first_index]
-        second_element = array[second_index]
-        array[first_index] = second_element
-        array[second_index] = first_element
+        array[first_index], array[second_index] = array[second_index], array[first_index]
         return array
 
 class Render:
