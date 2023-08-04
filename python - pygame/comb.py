@@ -19,9 +19,7 @@ def sort(root: Root, array: list[int]):
             else:
                 break
 
-        factor = int(factor/1.3)
-        if factor == 0:
-            factor = 1
+        factor = max(1, int(factor / 1.3))
 
     return array
 
